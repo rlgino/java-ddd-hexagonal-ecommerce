@@ -9,5 +9,4 @@ public class VorepositoryApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(VorepositoryApplication.class, args);
 	}
-
 }

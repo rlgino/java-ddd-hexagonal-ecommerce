@@ -1,4 +1,4 @@
-package com.example.vorepository.infraestructure;
+package com.example.vorepository.infraestructure.mongo;
 
 import com.example.vorepository.domain.Order;
 import org.springframework.data.mongodb.repository.MongoRepository;

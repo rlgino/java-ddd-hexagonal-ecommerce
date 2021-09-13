@@ -1,4 +1,4 @@
-package com.example.vorepository.infraestructure;
+package com.example.vorepository.infraestructure.mongo;
 
 import com.example.vorepository.domain.Order;
 import com.example.vorepository.domain.repository.OrderRepository;

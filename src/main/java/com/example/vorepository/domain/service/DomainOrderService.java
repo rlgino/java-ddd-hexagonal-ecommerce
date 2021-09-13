@@ -29,7 +29,9 @@ public class DomainOrderService implements OrderService {
 
     @Override
     public void completeOrder(UUID id) {
-
+        final Order order = getOrder(id);
+        order.complete();
+        orderRepository.save(order);
     }
 
     @Override

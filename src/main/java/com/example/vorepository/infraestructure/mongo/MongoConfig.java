@@ -1,4 +1,4 @@
-package com.example.vorepository.infraestructure;
+package com.example.vorepository.infraestructure.mongo;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;

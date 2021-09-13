@@ -1,4 +1,4 @@
-package com.example.vorepository.infraestructure;
+package com.example.vorepository.infraestructure.mongo;
 
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 

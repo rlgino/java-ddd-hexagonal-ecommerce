@@ -1,11 +1,13 @@
 package com.example.vorepository.domain;
 
-import java.math.BigDecimal;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+import java.util.*;
+
+@NoArgsConstructor
+@Getter
 public class Order {
     private UUID id;
     private OrderStatus status;
@@ -14,7 +16,7 @@ public class Order {
 
     public Order(UUID id, Product prod) {
         this.id = id;
-        this.orderItems = Arrays.asList(new OrderItem(prod));
+        this.orderItems = new ArrayList<>(Arrays.asList(new OrderItem(prod)));
         this.status = OrderStatus.CREATED;
         this.price = prod.getPrice();
     }
